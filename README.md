@@ -6,6 +6,7 @@
 # Modes
 - Brute force mode
 - Direct attack mode
+- Dictionary attack mode
 
 <div align="center">
     <img src="http://oi66.tinypic.com/iolw86.jpg" width="400px"</img> 
