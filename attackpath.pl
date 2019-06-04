@@ -19,6 +19,7 @@
 # *************************************************************************************** #
 
 
+
 #!/usr/bin/perl -w
 
 use strict;
@@ -1030,11 +1031,11 @@ sleep 3;
 
 # host subroutine.
 sub host {
-print "\nEnter URL to connect  : ";
+print "\n[ + ] Enter URL to connect  : ";
 $host=<STDIN>;
 chomp $host;
 if ($host eq ""){$host="localhost"};
-print "Enter Port to connect : ";
+print "[ + ] Enter Port to connect : ";
 $port=<STDIN>;
 chomp $port;
 if ($port =~/\D/ ){$port="80"};
@@ -1086,13 +1087,13 @@ if ($output =~ /Directory/) {
 	};
 
 if ($flag eq "0") { 
-print "\n$host is not vulnerable $loop.";
+print "\n[ + ] $host is not vulnerable $loop";
 }else{
-print "\a\a\a\n$host is vulernable $loop !!!";
+print "\a\a\a\n[ + ] $host is vulernable $loop !!!";
      };
 };
 if ($status eq "not_vulnerable"){
-				print "\n\n$host is not vulernable, exiting!\n";
+				print "\n\n[ + ] $host is not vulernable, starting exit mode!\n";
 				&exit;
 				};
 }; # end scan subroutine.
@@ -1143,10 +1144,10 @@ my $connection = IO::Socket::INET->new (
 				Proto => "tcp",
 				PeerAddr => "$host",
 				PeerPort => "$port",
-				) or die "\nSorry UNABLE TO CONNECT To $host On Port $port.\n";
+				) or die "\n[ ~ ] Error, can not connect to $host at port $port\n";
 $connection -> autoflush(1);
 if ($probe =~/command|scan/){
-print $connection "GET $url$command HTTP/1.0\r\n\r\n";
+print $connection "GET $url $command HTTP/1.0\r\n\r\n";
 }elsif ($probe =~/string/) {
 print $connection "HEAD / HTTP/1.0\r\n\r\n";
 };
@@ -1189,6 +1190,6 @@ exit;
 
 # Help subroutine.
 sub help {
-print "\n\n#################################\n[ Unicode Bug Scanner 		] \n[ Coded By Haroon Awan 		]\n[ Mail\: mrharoonawan\@gmail.com 	]\n#################################\n\n";
+print "\n\n#################################\n[Directory Traversal Bug Scanner] \n[ Coded By Haroon Awan 		]\n[ Mail\: mrharoonawan\@gmail.com 	]\n#################################\n\n";
 }; #
 
