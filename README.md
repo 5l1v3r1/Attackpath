@@ -1,18 +1,19 @@
 # F.A.Q
 
-# Attackpath
-- Attackpath is a software with exclusive payloads
+# Stand-alone
+- Attackpath.pl, is a software for path/directory traversal which is based on A.I.
 
-# Traversal Brute
-- Traversal Brute is a notorious dictionary based module for Attackpath suite
+# Stand-alone Payloads
+- Attackpath.pl, have built-in Timing and DDoS evasion with 35,000 payloads
 
-# Traversal Brute Payloads
+# Dictionary Module
+- Traversalbrute.pl, is a notorious dictionary based module for Attackpath suite
+
+# Dictionary Module Payloads
 - 25,000 payloads for simple to exclusive evasions
 
-# Simple Payloads
-- Simple path reveal
-
-# Evasion Payloads
+# # Dictionary Module Evasion Payloads
+- simple path/directory reveal
 - utf-8 evasion
 - 16 bit evasion
 - duplicate enteries
