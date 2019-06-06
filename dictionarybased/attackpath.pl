@@ -36,7 +36,7 @@ print "\033[2J";
 print "\033[0;0H";
 
 # Software Info
-print "\n\n					#################################\n					[   Path Traversal Bug Scanner  ] \n					[     Coded By Haroon Awan	]\n					[ Mail\: mrharoonawan\@gmail.com 	]\n					[Official Web\:fb.com\/mubassir.py]\n					#################################\n\n\n";
+print "\n\n					#################################\n					[     Path Traversal Bruter     ] \n					[     Coded By Haroon Awan	]\n					[ Mail\: mrharoonawan\@gmail.com 	]\n					[Official Web\:fb.com\/mubassir.py]\n					#################################\n\n\n";
 print "[ + ] Starting\n";
 
 
