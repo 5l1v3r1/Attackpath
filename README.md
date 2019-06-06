@@ -1,20 +1,29 @@
 # F.A.Q
 
 # Attackpath
-- Brute path traversal bug with 3000+ payloads on any parameter or direct server with exclusive evassions 
+- Attackpath is a software with exclusive payloads
 
-# Modes
-- Brute force mode
-- Direct attack mode
-- Dictionary attack mode
+# Traversal Brute
+- Traversal Brute is a notorious software with dictionary based module attack power
+
+# Traversal Brute Payloads
+- 25,000 exclusive 
+- utf-8 evasion
+- 16 bit evasion
+- duplicate 
+- encoding to double encoding
+- escape paths
 
 <div align="center">
     <img src="http://oi66.tinypic.com/iolw86.jpg" width="400px"</img> 
 </div>
 
 
-# Coder
-- Haroon Awan
+# Programming Environment
+- Perl
+
+# Dependencies
+- None
 
 # Mail
 - mrharoonawan@gmail.com
