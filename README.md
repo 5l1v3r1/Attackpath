@@ -4,15 +4,19 @@
 - Attackpath is a software with exclusive payloads
 
 # Traversal Brute
-- Traversal Brute is a notorious software with dictionary based module attack power
+- Traversal Brute is a notorious dictionary based module of Attackpath suite
 
 # Traversal Brute Payloads
-- 25,000 exclusive 
+- 25,000 exclusive payloads for simple to exclusive evasions
+
+# Payload Methods
+- Simple path reveal
 - utf-8 evasion
 - 16 bit evasion
-- duplicate 
+- duplicate enteries
 - encoding to double encoding
-- escape paths
+- escape paths reveal
+- escape paths evasion
 
 <div align="center">
     <img src="http://oi66.tinypic.com/iolw86.jpg" width="400px"</img> 
