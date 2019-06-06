@@ -20,38 +20,67 @@
 
 
 #!/usr/bin/perl
-use strict;
+
+# Libraries
+use HTTP::Request::Common;
+use LWP::UserAgent;
 use LWP::Simple qw($ua get);
-		$ua = LWP::UserAgent->new;
-		$ua->agent('Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.3) Gecko/20070309 Firefox/2.0.0.9');
+
+
+# User Agent
+$ua = LWP::UserAgent->new;
+$ua->agent('Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.3) Gecko/20070309 Firefox/2.0.0.9');
+
+# Clear the screen and jump to 0,0
+print "\033[2J";    
+print "\033[0;0H";
+
+# Software Info
+print "\n\n					#################################\n					[   Path Traversal Bug Scanner  ] \n					[     Coded By Haroon Awan	]\n					[ Mail\: mrharoonawan\@gmail.com 	]\n					[Official Web\:fb.com\/mubassir.py]\n					#################################\n\n\n";
+print "[ + ] Starting\n";
+
+
+
 # Array
 my @found;
 
-# Call Subroutine
+# Calling Subroutines
 &usage unless @ARGV==3;
+
+# Argv List
 my $url = $ARGV[0];
-my $dirlist = $ARGV[1];
+my $filelist = $ARGV[1];
 my $results = $ARGV[2];
 
-# File Handler
-open(ifile, "<$dirlist") || die "Couldn't open file\n";
-my @dirs =<ifile>;
+
+# File handler
+open(ifile, "<$filelist") || die "Couldn't open file\n";
+my @file =<ifile>;
 close("ifile");
 
-# Call Subroutine
+# Calling Subrountine
 &search;
 
 # Subroutine
-sub usage{ 	print "[ + ] usage: $0 http://url unicodebug1.txt result.txt\n"; 	exit;	 }
+sub usage{ 	print "[ + ] usage: $0 http://Address brutelist.txt result.txt\n"; 	exit;	 }
+
 
 # Subroutine
 sub search{
-		foreach my $dir(@dirs) {
-			print "$url/$dir";
-			my $response = $ua->get("$url/$dir");
-			if($response->status_line !~ m/^404/){
-				push(@found,"$url/$dir");
-                                	}
-	  }	
-
-	  }
+			print "[ + ] Address: $file";
+		foreach my $file(@file) {
+			print "$url/$file";
+			my $response = $ua->get("$url/$file");
+			if($response->status_line ne RC_OK)  {
+			print "[ ! ] HTTP Status: 404 | Testing Path: "; 
+						             }
+			else {
+			if ($response->status_line eq RC_OK) {
+			push(@found,"$url/$file"); 
+			print " \n[ * ] HTTP Status: 200 | Tested Path: "; }
+			
+                        			}
+                                				}
+}
+print "\n\n[ ~ ] Couldn't find any bug, existing!\n\n";
+exit;
