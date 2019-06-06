@@ -9,14 +9,22 @@
 # Traversal Brute Payloads
 - 25,000 payloads for simple to exclusive evasions
 
-# Payload Methods
+# Simple Payloads
 - Simple path reveal
+
+# Evasion Payloads
 - utf-8 evasion
 - 16 bit evasion
 - duplicate enteries
 - encoding to double encoding
 - escape paths reveal
 - escape paths evasion
+
+# DDos Protection Bypass 
+- Built-in DDos protection bypasser for cloud or simple DDoS mechanism
+
+# Timing Evasion
+- Built-in timing evasion for DDoS mechanism bypass
 
 # Usable
 - Any Server
