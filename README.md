@@ -10,22 +10,13 @@
 - Traversalbrute.pl, is a notorious dictionary based module for Attackpath suite
 
 # Dictionary Module Payloads
-- 25,000 payloads for simple to exclusive evasions
-
-# # Dictionary Module Evasion Payloads
-- simple path/directory reveal
+- 35,000 payloads for simple to exclusive evasions
 - utf-8 evasion
 - 16 bit evasion
 - duplicate enteries
 - encoding to double encoding
 - escape paths reveal
 - escape paths evasion
-
-# DDos Protection Bypass 
-- Built-in DDos protection bypasser for cloud or simple DDoS mechanism
-
-# Timing Evasion
-- Built-in timing evasion for DDoS mechanism bypass
 
 # Usable
 - Any Server
