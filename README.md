@@ -18,6 +18,12 @@
 - escape paths reveal
 - escape paths evasion
 
+# Usable
+- Any Server
+- Any Parameter
+- Any file
+- Any Directory
+
 <div align="center">
     <img src="http://oi66.tinypic.com/iolw86.jpg" width="400px"</img> 
 </div>
