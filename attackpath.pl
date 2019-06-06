@@ -1197,6 +1197,6 @@ exit;
 
 # Help subroutine.
 sub help {
-print "\n\n					#################################\n					[Directory Traversal Bug Scanner] \n					[ Coded By Haroon Awan 		]\n					[ Mail\: mrharoonawan\@gmail.com 	]\n					[Official Web\:fb.com\/mubassir.py]\n					#################################\n\n";
+print "\n\n					#################################\n					[  Path Traversal Bug Scanner   ] \n					[ Coded By Haroon Awan 		]\n					[ Mail\: mrharoonawan\@gmail.com 	]\n					[Official Web\:fb.com\/mubassir.py]\n					#################################\n\n";
 }; #
 
