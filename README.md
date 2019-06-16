@@ -18,6 +18,9 @@
 - escape paths reveal
 - escape paths evasion
 
+# Parameter or Directory based specific
+- OS indexing bug list in dictionary based module
+
 # Usable
 - Any Server
 - Any Parameter
