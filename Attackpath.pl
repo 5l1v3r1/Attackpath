@@ -33919,9 +33919,9 @@ if ($output =~ /Directory/) {
 	};
 
 if ($flag eq "0") { 
-print "\n[ + ] $host is not vulnerable $loop";
+print "\n[ + ] $host is not vulnerable to attack type: $loop";
 }else{
-print "\a\a\a\n[ + ] $host is vulernable $loop !!!";
+print "\a\a\a\n[ + ] $host is vulernable to attack type: $loop !!!";
      };
 };
 if ($status eq "not_vulnerable"){
